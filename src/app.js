@@ -4,6 +4,7 @@ const express = require('express')
 const hbs = require('hbs')
 const request = require('request')
 const forecast = require('./utils/forecast')
+const port = process.env.PORT || 5000;
 // const geocode = require('./utils/geocode')
 
 const app = express()
@@ -100,6 +101,6 @@ app.get('*',(req,res)=>{
 // })
 
 //to start the server (used only one time)
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is up on port 3000')
 })
