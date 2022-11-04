@@ -19,7 +19,6 @@ const messageSec = document.querySelector('#message-2')
 // messageOne.textContent = 'From JS'
 weatherForm.addEventListener('submit', (e) =>{
     e.preventDefault()
-
     const location = search.value
     messageOne.textContent = 'loading...'
     messageSec.textContent = ''
