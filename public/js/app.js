@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (e) =>{
     const location = search.value
     messageOne.textContent = 'loading...'
     messageSec.textContent = ''
-    fetch('https://desolate-gorge-81230.herokuapp.com/weather?address='+location).then((response)=>{
+    fetch('https://weather-app-six-ebon.vercel.app/weather?address='+location).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
                 // console.log(data.error)
